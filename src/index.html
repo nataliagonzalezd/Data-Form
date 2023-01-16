@@ -22,12 +22,18 @@
                     <div class="valid-feedback">
                         Looks good!
                     </div>
+                    <div class="invalid-feedback">
+                        Please provide a valid number card.
+                    </div>
                 </div>
                 <div class="col-md-3">
                     <label for="validationCustom02" class="form-label">CVC #</label>
                     <input type="number" class="form-control" id="validationCustom02" placeholder="0000" required />
                     <div class="valid-feedback">
                         Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please provide a valid CVC.
                     </div>
                 </div>
                 <div class="col-md-4 ps-2">
@@ -79,24 +85,25 @@
                         <div class="bg-secondary px-1 py-2 rounded-1">
                             <!-- checkbox -->
                             <div class="form-check form-check-inline ms-2">
-                                <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineMaster" value="master" />
+                                <input class="form-check-input" type="radio" name="radio-stacked" id="inlineMaster" value="master" required />
                                 <label class="form-check-label" for="inlineMaster"><i class="fab fa-cc-mastercard"></i></label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineVisa" value="visa" />
+                                <input class="form-check-input" type="radio" name="radio-stacked" id="inlineVisa" value="visa" required />
                                 <label class="form-check-label" for="inlineVisa"><i class="fab fa-cc-visa"></i></label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineDClub" value="dclub" />
+                                <input class="form-check-input" type="radio" name="radio-stacked" id="inlineDClub" value="dclub" required />
                                 <label class="form-check-label" for="inlineDClub"><i class="fab fa-cc-diners-club"></i></label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineAmex" value="amex" />
+                                <input class="form-check-input" type="radio" name="radio-stacked" id="inlineAmex" value="amex" required />
                                 <label class="form-check-label" for="inlineAmex"><i class="fab fa-cc-amex"></i></label>
+                                <div class="invalid-feedback">Please, select a Card</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 ps-2">
+                    <div class="col-md-6 ps-5">
                         <label>Message</label>
                         <div class="input-group">
                             <textarea class="form-control"></textarea>
